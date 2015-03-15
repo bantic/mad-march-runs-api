@@ -5,14 +5,23 @@ RSpec.describe UserSerializer, type: :serializer do
   let(:serializer) { UserSerializer.new(user) }
   let(:serialized) { serializer.as_json }
 
+  it { expect(user.teams.length).not_to eql 0 }
+
   subject { serialized }
-  its(:keys) { should include('users') }
+  its(:keys) { should include('user') }
 
   context 'serialized user' do
-    subject { serialized['users'][0] }
+    subject { serialized['user'] }
 
-    its(:keys) { should include('id') }
-    its(:keys) { should include('name') }
-    its(:keys) { should include('email') }
+    its(:keys) { should include(:id) }
+    its(:keys) { should include(:name) }
+    its(:keys) { should include(:email) }
+    its(:keys) { should include(:teams) }
+
+    context 'serialized teams' do
+      subject { serialized['user'][:teams] }
+      its(:length) { should eql user.teams.length }
+      it { should eql user.teams.map(&:id) }
+    end
   end
 end

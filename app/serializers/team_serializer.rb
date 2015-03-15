@@ -1,7 +1,3 @@
-class TeamSerializer < BaseSerializer
-  schema do
-    type 'team'
-
-    map_properties :id, :name, :seed
-  end
+class TeamSerializer < ActiveModel::Serializer
+  attributes :id, :name, :seed
 end
