@@ -1,4 +1,7 @@
-== README
+[![Build
+Status](https://travis-ci.org/bantic/mad-march-runs-api.svg?branch=master)](https://travis-ci.org/bantic/mad-march-runs-api)
+
+## README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
