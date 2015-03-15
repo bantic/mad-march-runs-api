@@ -6,7 +6,11 @@ class User < ActiveRecord::Base
 
   before_save :ensure_authentication_token
 
+  validate :validate_teams_count
+
   has_and_belongs_to_many :teams
+
+  TOURNEY_START_TIME = Time.zone.local(2015, 3, 19, 9, 30)
 
   def ensure_authentication_token
     if authentication_token.blank?
@@ -14,7 +18,18 @@ class User < ActiveRecord::Base
     end
   end
 
+  def can_select_teams
+    Time.zone.now < TOURNEY_START_TIME
+  end
+
   private
+
+  def validate_teams_count
+    if teams.count > 3
+      errors.add(:base, 'cannot have more than 3 teams')
+      return false
+    end
+  end
 
   def generate_authentication_token
     loop do

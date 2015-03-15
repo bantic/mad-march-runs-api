@@ -16,10 +16,11 @@ RSpec.describe UserSerializer, type: :serializer do
     its(:keys) { should include(:id) }
     its(:keys) { should include(:name) }
     its(:keys) { should include(:email) }
-    its(:keys) { should include(:teams) }
+    its(:keys) { should include(:team_ids) }
+    its(:keys) { should include(:can_select_teams) }
 
     context 'serialized teams' do
-      subject { serialized['user'][:teams] }
+      subject { serialized['user'][:team_ids] }
       its(:length) { should eql user.teams.length }
       it { should eql user.teams.map(&:id) }
     end
