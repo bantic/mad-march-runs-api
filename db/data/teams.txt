@@ -1,0 +1,39 @@
+Region: Midwest
+1. Kentucky vs. 16. Manhattan/Hampton
+2. Kansas vs. 15. New Mexico State
+3. Notre Dame vs. 14. Northeastern
+4. Maryland vs. 13. Valparaiso
+5. West Virginia vs. 12. Buffalo
+6. Butler vs. 11. Texas
+7. Wichita State vs. 10. Indiana
+8. Cincinnati vs. 9. Purdue
+
+Region: East
+1. Villanova vs. 16. Lafayette
+2. Virginia vs. 15. Belmont
+3. Oklahoma vs. 14. Albany
+4. Louisville vs. 13. UC Irvine
+5. Northern Iowa vs. 12. Wyoming
+6. Providence vs. 11. Boise State/Dayton
+7. Michigan State vs. 10. Georgia
+8. North Carolina State vs. 9. LSU
+
+Region: South
+1. Duke vs. 16. North Florida/Robert Morris
+2. Gonzaga vs. 15. North Dakota State
+3. Iowa State vs. 14. UAB
+4. Georgetown vs. 13. Eastern Washington
+5. Utah vs. 12. Stephen F. Austin
+6. SMU vs. 11. UCLA
+7. Iowa vs. 10. Davidson
+8. San Diego State vs. 9. St. John's
+
+Region: West
+1. Wisconsin vs. 16. Coastal Carolina
+2. Arizona vs. 15. Texas Southern
+3. Baylor vs. 14. Georgia State
+4. North Carolina vs. 13. Harvard
+5. Arkansas vs. 12. Wofford
+6. Xavier vs. 11. BYU/Ole Miss
+7. VCU vs. 10. Ohio State
+8. Oregon vs. 9. Oklahoma State
