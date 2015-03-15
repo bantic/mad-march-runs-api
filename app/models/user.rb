@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   before_save :ensure_authentication_token
 
   validate :validate_teams_count
+  validates :email, uniqueness: {case_sensitive: false}
 
   has_and_belongs_to_many :teams
 

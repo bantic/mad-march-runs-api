@@ -1,6 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  describe 'validations' do
+    it 'should check email uniqueness' do
+      email = 'abcDEF@gmail.com'
+
+      Fabricate :user, email: email
+
+      expect( Fabricate.build(:user, email:email).save ).to be false
+      expect( Fabricate.build(:user, email:'abcdef@gmail.com').save ).to be false
+    end
+  end
+
   describe '#teams' do
     let(:user) { Fabricate :user, teams:[] }
 

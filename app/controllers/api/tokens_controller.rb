@@ -2,6 +2,10 @@ class Api::TokensController < Devise::SessionsController
   skip_before_filter :verify_authenticity_token
   respond_to :json
 
+  def new
+    render json: {errors: {base: ['not logged in']}}, status: 401
+  end
+
   def create
     self.resource = warden.authenticate(auth_options.merge(store: false))
 
