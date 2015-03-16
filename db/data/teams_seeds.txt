@@ -1,0 +1,64 @@
+Manhattan/Hampton|16|Midwest|team-logos/team-logo-67-manhattan-hampton.gif
+Kansas|2|Midwest|team-logos/team-logo-68-kansas.gif
+New Mexico State|15|Midwest|team-logos/team-logo-69-new-mexico-state.gif
+Notre Dame|3|Midwest|team-logos/team-logo-70-notre-dame.gif
+Northeastern|14|Midwest|team-logos/team-logo-71-northeastern.gif
+Maryland|4|Midwest|team-logos/team-logo-72-maryland.gif
+Valparaiso|13|Midwest|team-logos/team-logo-73-valparaiso.gif
+West Virginia|5|Midwest|team-logos/team-logo-74-west-virginia.gif
+Buffalo|12|Midwest|team-logos/team-logo-75-buffalo.gif
+Butler|6|Midwest|team-logos/team-logo-76-butler.gif
+Texas|11|Midwest|team-logos/team-logo-77-texas.gif
+Wichita State|7|Midwest|team-logos/team-logo-78-wichita-state.gif
+Indiana|10|Midwest|team-logos/team-logo-79-indiana.gif
+Cincinnati|8|Midwest|team-logos/team-logo-80-cincinnati.gif
+Purdue|9|Midwest|team-logos/team-logo-81-purdue.gif
+Villanova|1|East|team-logos/team-logo-82-villanova.gif
+Lafayette|16|East|team-logos/team-logo-83-lafayette.gif
+Virginia|2|East|team-logos/team-logo-84-virginia.gif
+Belmont|15|East|team-logos/team-logo-85-belmont.gif
+Oklahoma|3|East|team-logos/team-logo-86-oklahoma.gif
+Albany|14|East|team-logos/team-logo-87-albany.gif
+Louisville|4|East|team-logos/team-logo-88-louisville.gif
+UC Irvine|13|East|team-logos/team-logo-89-uc-irvine.gif
+Northern Iowa|5|East|team-logos/team-logo-90-northern-iowa.gif
+Wyoming|12|East|team-logos/team-logo-91-wyoming.gif
+Providence|6|East|team-logos/team-logo-92-providence.gif
+Boise State/Dayton|11|East|team-logos/team-logo-93-boise-state-dayton.gif
+Michigan State|7|East|team-logos/team-logo-94-michigan-state.gif
+Georgia|10|East|team-logos/team-logo-95-georgia.gif
+North Carolina State|8|East|team-logos/team-logo-96-north-carolina-state.gif
+LSU|9|East|team-logos/team-logo-97-lsu.gif
+North Florida/Robert Morris|16|South|team-logos/team-logo-99-north-florida-robert-morris.gif
+Gonzaga|2|South|team-logos/team-logo-100-gonzaga.gif
+North Dakota State|15|South|team-logos/team-logo-101-north-dakota-state.gif
+Iowa State|3|South|team-logos/team-logo-102-iowa-state.gif
+UAB|14|South|team-logos/team-logo-103-uab.gif
+Georgetown|4|South|team-logos/team-logo-104-georgetown.gif
+Utah|5|South|team-logos/team-logo-106-utah.gif
+SMU|6|South|team-logos/team-logo-108-smu.gif
+Iowa|7|South|team-logos/team-logo-110-iowa.gif
+Wisconsin|1|West|team-logos/team-logo-114-wisconsin.gif
+Arizona|2|West|team-logos/team-logo-116-arizona.gif
+Baylor|3|West|team-logos/team-logo-118-baylor.gif
+North Carolina|4|West|team-logos/team-logo-120-north-carolina.gif
+Harvard|13|West|team-logos/team-logo-121-harvard.gif
+Xavier|6|West|team-logos/team-logo-124-xavier.gif
+VCU|7|West|team-logos/team-logo-126-vcu.gif
+Oregon|8|West|team-logos/team-logo-128-oregon.gif
+Kentucky|1|Midwest|team-logos/team-logo-66-kentucky.gif
+Duke|1|South|team-logos/team-logo-98-duke.gif
+Eastern Washington|13|South|team-logos/team-logo-105-eastern-washington.gif
+San Diego State|8|South|team-logos/team-logo-112-san-diego-state.gif
+Stephen F. Austin|12|South|team-logos/team-logo-107-stephen-f-austin.gif
+UCLA|11|South|team-logos/team-logo-109-ucla.gif
+Davidson|10|South|team-logos/team-logo-111-davidson.gif
+St. John's|9|South|team-logos/team-logo-113-st-john-s.gif
+Coastal Carolina|16|West|team-logos/team-logo-115-coastal-carolina.gif
+Texas Southern|15|West|team-logos/team-logo-117-texas-southern.gif
+Georgia State|14|West|team-logos/team-logo-119-georgia-state.gif
+Arkansas|5|West|team-logos/team-logo-122-arkansas.gif
+Wofford|12|West|team-logos/team-logo-123-wofford.gif
+BYU/Ole Miss|11|West|team-logos/team-logo-125-byu-ole-miss.gif
+Ohio State|10|West|team-logos/team-logo-127-ohio-state.gif
+Oklahoma State|9|West|team-logos/team-logo-129-oklahoma-state.gif

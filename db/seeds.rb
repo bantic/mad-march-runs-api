@@ -6,29 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-File.open('./db/data/teams.txt') do |f|
-  region = nil
-
+File.open(Rails.root.join('db','data','teams_seeds.txt')) do |f|
   f.each_line do |line|
-    next if line.blank?
+    name, seed, region, logo_path = line.strip.split('|')
 
-    if line.start_with?('Region')
-      region = line.match(/Region: (.*)$/)[1]
-      next
-    end
-
-    match = line.strip.match(/^(\d+)\. (.*) vs\. (\d+)\. (.*)$/)
-
-    team_seed = match[1]
-    team_name = match[2]
-
-    puts "Creating #{team_name} (#{team_name})"
-    Team.create(name:team_name, seed:team_seed, region:region)
-
-    team_seed = match[3]
-    team_name = match[4]
-
-    puts "Creating #{team_name} (#{team_name})"
-    Team.create(name:team_name, seed:team_seed, region:region)
+    team = Team.where(name:name).first || Team.new(name:name)
+    team.seed = seed
+    team.region = region
+    team.logo_path = logo_path
+    team.save!
   end
 end
