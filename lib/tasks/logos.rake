@@ -11,7 +11,7 @@ namespace :logos do
         `#{cmd}`
 
         t = Team.find(id)
-        t.logo_url = img_url
+        t.logo_path = "team-logos/#{img_filename}"
         t.save!
         sleep 1
       end
