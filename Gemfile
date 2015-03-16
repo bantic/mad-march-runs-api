@@ -28,7 +28,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'mechanize'
 
 gem 'fuzzy_match'
-gem 'rollbar', '~> 1.2.7'
+gem 'rollbar'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
