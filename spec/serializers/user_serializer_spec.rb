@@ -18,6 +18,7 @@ RSpec.describe UserSerializer, type: :serializer do
     its(:keys) { should include(:email) }
     its(:keys) { should include(:team_ids) }
     its(:keys) { should include(:can_select_teams) }
+    its(:keys) { should include(:is_admin) }
 
     context 'serialized teams' do
       subject { serialized['user'][:team_ids] }
