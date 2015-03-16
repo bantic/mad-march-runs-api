@@ -6,7 +6,7 @@ namespace :logos do
         id, team_name, img_url = line.strip.split('|')
         clean_name = team_name.gsub(/[^a-zA-Z]/,'-').gsub(/--/,'-').downcase
         img_filename = "team-logo-#{id}-#{clean_name}.gif"
-        cmd = "curl #{img_url} > app/assets/images/team-logos/#{img_filename}"
+        cmd = "curl #{img_url} > public/assets/team-logos/#{img_filename}"
         puts cmd
         `#{cmd}`
 
