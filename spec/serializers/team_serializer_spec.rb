@@ -15,5 +15,6 @@ RSpec.describe TeamSerializer, type: :serializer do
     its(:keys) { should include(:name) }
     its(:keys) { should include(:seed) }
     its(:keys) { should include(:region) }
+    its(:keys) { should include(:logo_url) }
   end
 end
