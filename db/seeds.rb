@@ -36,3 +36,37 @@ rounds.each do |name, time|
   round.starts_at = time
   round.save!
 end
+
+round1 = Round.where(name: 'Round of 64 Day 1').first
+round2 = Round.where(name: 'Round of 64 Day 2').first
+round1.games.clear
+round2.games.clear
+round1.save!
+round2.save!
+
+File.open(Rails.root.join('db','data','teams.txt')) do |f|
+  f.each_line do |line|
+    next if line.strip.blank? || line.start_with?('Region')
+
+    matcher = /\d+\. (.*) vs\. \d+\. (.*) Day (\d)/
+    match = line.match(matcher)
+    team1 = Team.where(name:match[1]).first
+    team2 = Team.where(name:match[2]).first
+    day = match[3]
+
+    active_round = nil
+    case day
+    when '1'
+      active_round = round1
+    when '2'
+      active_round = round2
+    end
+
+    game = Game.new(round:active_round)
+    game.save!
+    game.teams << team1
+    game.teams << team2
+    game.save!
+    puts "Create game #{game.round.name} - #{game.teams.first.name} vs #{game.teams.last.name}"
+  end
+end

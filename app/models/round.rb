@@ -1,5 +1,5 @@
 class Round < ActiveRecord::Base
-  has_many :games
+  has_many :games, dependent: :destroy
 
   def active?
     starts_at > Time.zone.now && games.count > 0

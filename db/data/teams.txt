@@ -1,39 +1,39 @@
 Region: Midwest
-1. Kentucky vs. 16. Manhattan/Hampton
-2. Kansas vs. 15. New Mexico State
-3. Notre Dame vs. 14. Northeastern
-4. Maryland vs. 13. Valparaiso
-5. West Virginia vs. 12. Buffalo
-6. Butler vs. 11. Texas
-7. Wichita State vs. 10. Indiana
-8. Cincinnati vs. 9. Purdue
+1. Kentucky vs. 16. Manhattan/Hampton Day 1
+2. Kansas vs. 15. New Mexico State Day 2
+3. Notre Dame vs. 14. Northeastern Day 1
+4. Maryland vs. 13. Valparaiso Day 2
+5. West Virginia vs. 12. Buffalo Day 2
+6. Butler vs. 11. Texas Day 1
+7. Wichita State vs. 10. Indiana Day 2
+8. Cincinnati vs. 9. Purdue Day 1
 
 Region: East
-1. Villanova vs. 16. Lafayette
-2. Virginia vs. 15. Belmont
-3. Oklahoma vs. 14. Albany
-4. Louisville vs. 13. UC Irvine
-5. Northern Iowa vs. 12. Wyoming
-6. Providence vs. 11. Boise State/Dayton
-7. Michigan State vs. 10. Georgia
-8. North Carolina State vs. 9. LSU
+1. Villanova vs. 16. Lafayette Day 1
+2. Virginia vs. 15. Belmont Day 2
+3. Oklahoma vs. 14. Albany Day 2
+4. Louisville vs. 13. UC Irvine Day 2
+5. Northern Iowa vs. 12. Wyoming Day 2
+6. Providence vs. 11. Boise State/Dayton Day 2
+7. Michigan State vs. 10. Georgia Day 2
+8. North Carolina State vs. 9. LSU Day 1
 
 Region: South
-1. Duke vs. 16. North Florida/Robert Morris
-2. Gonzaga vs. 15. North Dakota State
-3. Iowa State vs. 14. UAB
-4. Georgetown vs. 13. Eastern Washington
-5. Utah vs. 12. Stephen F. Austin
-6. SMU vs. 11. UCLA
-7. Iowa vs. 10. Davidson
-8. San Diego State vs. 9. St. John's
+1. Duke vs. 16. North Florida/Robert Morris Day 2
+2. Gonzaga vs. 15. North Dakota State Day 2
+3. Iowa State vs. 14. UAB Day 1
+4. Georgetown vs. 13. Eastern Washington Day 1
+5. Utah vs. 12. Stephen F. Austin Day 1
+6. SMU vs. 11. UCLA Day 1
+7. Iowa vs. 10. Davidson Day 2
+8. San Diego State vs. 9. St. John's Day 2
 
 Region: West
-1. Wisconsin vs. 16. Coastal Carolina
-2. Arizona vs. 15. Texas Southern
-3. Baylor vs. 14. Georgia State
-4. North Carolina vs. 13. Harvard
-5. Arkansas vs. 12. Wofford
-6. Xavier vs. 11. BYU/Ole Miss
-7. VCU vs. 10. Ohio State
-8. Oregon vs. 9. Oklahoma State
+1. Wisconsin vs. 16. Coastal Carolina Day 2
+2. Arizona vs. 15. Texas Southern Day 1
+3. Baylor vs. 14. Georgia State Day 1
+4. North Carolina vs. 13. Harvard Day 1
+5. Arkansas vs. 12. Wofford Day 1
+6. Xavier vs. 11. BYU/Ole Miss Day 1
+7. VCU vs. 10. Ohio State Day 1
+8. Oregon vs. 9. Oklahoma State Day 2
