@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace 'api' do
     resources :users
     resources :teams
+    resources :rounds
   end
 
   devise_for :users, path: 'api',
