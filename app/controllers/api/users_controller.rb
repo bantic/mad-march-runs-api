@@ -23,9 +23,13 @@ class Api::UsersController < ApiController
 
   def update
     user = User.find params[:id]
-    team_ids = params[:user] && params[:user][:team_ids] || []
-    teams = Team.find(team_ids)
-    user.teams = teams
+
+    if Time.zone.now <= User::TOURNEY_START_TIME
+      team_ids = params[:user] && params[:user][:team_ids] || []
+      teams = Team.find(team_ids)
+      user.teams = teams
+    end
+
     user.save!
     render json: UserSerializer.new(user)
   end

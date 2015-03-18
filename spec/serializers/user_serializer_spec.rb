@@ -10,6 +10,7 @@ RSpec.describe UserSerializer, type: :serializer do
   subject { serialized }
   its(:keys) { should include('user') }
   its(:keys) { should include('teams') }
+  its(:keys) { should include('picks') }
 
   context 'serialized user' do
     subject { serialized['user'] }

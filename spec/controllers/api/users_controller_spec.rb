@@ -12,7 +12,7 @@ RSpec.describe Api::UsersController, type: :controller do
     it { should serialize_to(UserSerializer, user) }
   end
 
-  describe '#update' do
+  describe '#update teams' do
     let(:team) { Fabricate :team }
     let(:params) { {
       id: user.id,
@@ -31,6 +31,19 @@ RSpec.describe Api::UsersController, type: :controller do
       it 'should replace user teams' do
         request.call
         expect(user.reload.teams.to_a).to eql([team])
+      end
+    end
+
+    context 'after the tournament has started' do
+      it 'should not allow changes to teams' do
+        Timecop.travel( User::TOURNEY_START_TIME + 1.minute) do
+          team_ids = user.teams.map(&:id)
+          request.call
+          expect(response).to be_ok
+          user.reload
+          expect(team_ids).to eql(user.teams.map(&:id))
+          expect(team_ids).not_to include(team.id)
+        end
       end
     end
   end

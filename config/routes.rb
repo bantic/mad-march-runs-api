@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :users
     resources :teams
     resources :rounds
+    resources :picks
   end
 
   devise_for :users, path: 'api',

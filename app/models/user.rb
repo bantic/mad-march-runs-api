@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
 
   before_save :ensure_authentication_token
 
+  has_many :picks, dependent: :destroy
+
   validate :validate_teams_count
   validates :email, uniqueness: {case_sensitive: false}
 

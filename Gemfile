@@ -45,5 +45,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'rspec-its'
+
+  gem 'timecop'
 end
 

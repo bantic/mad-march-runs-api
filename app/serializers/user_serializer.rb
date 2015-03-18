@@ -3,4 +3,5 @@ class UserSerializer < ActiveModel::Serializer
     :can_select_teams, :is_admin
 
   has_many :teams
+  has_many :picks
 end
