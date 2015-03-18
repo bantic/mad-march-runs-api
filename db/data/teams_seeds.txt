@@ -36,7 +36,7 @@ Iowa State|3|South|team-logos/team-logo-102-iowa-state.gif
 UAB|14|South|team-logos/team-logo-103-uab.gif
 Georgetown|4|South|team-logos/team-logo-104-georgetown.gif
 Utah|5|South|team-logos/team-logo-106-utah.gif
-SMU|6|South|team-logos/team-logo-108-smu.gif
+SMU|6|South|team-logos/team-logo-108-smu2.gif
 Iowa|7|South|team-logos/team-logo-110-iowa.gif
 Wisconsin|1|West|team-logos/team-logo-114-wisconsin.gif
 Arizona|2|West|team-logos/team-logo-116-arizona.gif
@@ -44,7 +44,7 @@ Baylor|3|West|team-logos/team-logo-118-baylor.gif
 North Carolina|4|West|team-logos/team-logo-120-north-carolina.gif
 Harvard|13|West|team-logos/team-logo-121-harvard.gif
 Xavier|6|West|team-logos/team-logo-124-xavier.gif
-VCU|7|West|team-logos/team-logo-126-vcu.gif
+VCU|7|West|team-logos/team-logo-126-vcu2.gif
 Oregon|8|West|team-logos/team-logo-128-oregon.gif
 Kentucky|1|Midwest|team-logos/team-logo-66-kentucky.gif
 Duke|1|South|team-logos/team-logo-98-duke.gif
@@ -59,6 +59,6 @@ Texas Southern|15|West|team-logos/team-logo-117-texas-southern.gif
 Georgia State|14|West|team-logos/team-logo-119-georgia-state.gif
 Arkansas|5|West|team-logos/team-logo-122-arkansas.gif
 Wofford|12|West|team-logos/team-logo-123-wofford.gif
-BYU/Ole Miss|11|West|team-logos/team-logo-125-byu-ole-miss.gif
+BYU/Ole Miss|11|West|team-logos/team-logo-125-byu-ole-miss2.gif
 Ohio State|10|West|team-logos/team-logo-127-ohio-state.gif
 Oklahoma State|9|West|team-logos/team-logo-129-oklahoma-state.gif
