@@ -22,7 +22,7 @@ class Api::UsersController < ApiController
   end
 
   def update
-    user = User.find params[:id]
+    user = current_user
 
     if Time.zone.now <= User::TOURNEY_START_TIME
       team_ids = params[:user] && params[:user][:team_ids] || []

@@ -1,22 +1,6 @@
-ActiveAdmin.register Game do
+ActiveAdmin.register Pick do
 
 
-  index do
-    selectable_column
-    id_column
-
-    column :round do |game|
-      game.round.name
-    end
-
-    column :teams do |game|
-      game.teams.map(&:name).join(' vs ')
-    end
-
-    column :starts_at do |game|
-      game.round.starts_at
-    end
-  end
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #

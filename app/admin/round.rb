@@ -1,5 +1,18 @@
 ActiveAdmin.register Round do
 
+  index do
+    selectable_column
+    id_column
+
+    column :name
+
+    column "Total Picks" do |round|
+      round.games.inject(0) { |sum, game| sum += game.picks.count }
+    end
+
+    column :starts_at
+  end
+
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

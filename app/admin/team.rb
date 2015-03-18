@@ -1,5 +1,18 @@
 ActiveAdmin.register Team do
 
+  index do
+    selectable_column
+    id_column
+
+    column :name
+    column :seed
+    column :region
+
+    column "Selected count" do |team|
+      team.users.count
+    end
+  end
+
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
