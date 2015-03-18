@@ -17,5 +17,6 @@ RSpec.describe PickSerializer, type: :serializer do
     its(:keys) { should include('team_id') }
     its(:keys) { should include('game_id') }
     its(:keys) { should include(:user_id) }
+    its(:keys) { should include('round_id') }
   end
 end

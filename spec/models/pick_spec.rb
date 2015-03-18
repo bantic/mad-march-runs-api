@@ -18,6 +18,9 @@ RSpec.describe Pick, type: :model do
       pick.team = game.teams.last
       expect(pick).not_to be_valid
 
+      pick.round = game.round
+      expect(pick).not_to be_valid
+
       pick.user = Fabricate :user
       expect(pick).to be_valid
     end
@@ -32,9 +35,8 @@ RSpec.describe Pick, type: :model do
 
     it 'is not valid if it is after the start of the round' do
       pick = Fabricate.build :pick
-      round = pick.game.round
-      round.starts_at = Time.zone.now - 5.minutes
-      round.save!
+      pick.round.starts_at = Time.zone.now - 5.minutes
+      pick.round.save!
 
       expect(pick).not_to be_valid
       expect(pick.errors).to include(:base)

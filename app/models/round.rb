@@ -10,4 +10,8 @@ class Round < ActiveRecord::Base
     starts_at.beginning_of_day <= now &&
       starts_at.end_of_day >= now
   end
+
+  def locked?
+    Time.zone.now >= starts_at
+  end
 end

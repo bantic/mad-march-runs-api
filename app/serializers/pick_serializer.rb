@@ -3,4 +3,5 @@ class PickSerializer < ActiveModel::Serializer
 
   has_one :team
   has_one :game
+  has_one :round
 end
