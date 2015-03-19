@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
   has_and_belongs_to_many :teams
 
-  TOURNEY_START_TIME = Time.zone.local(2015, 3, 19, 9, 30)
+  TOURNEY_START_TIME = Time.zone.local(2015, 3, 19, 11, 45)
 
   def ensure_authentication_token
     if authentication_token.blank?
