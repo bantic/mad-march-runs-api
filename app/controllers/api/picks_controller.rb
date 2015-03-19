@@ -11,7 +11,7 @@ class Api::PicksController < ApiController
     if pick.save
       render json: PickSerializer.new(pick)
     else
-      render json: {errors:pick.errors}
+      render json: {errors:pick.errors}, status:422
     end
   end
 end

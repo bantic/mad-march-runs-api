@@ -14,4 +14,8 @@ class Round < ActiveRecord::Base
   def locked?
     Time.zone.now >= starts_at
   end
+
+  def starts_at_ms
+    starts_at.to_i*1000
+  end
 end

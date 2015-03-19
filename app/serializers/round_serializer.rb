@@ -1,5 +1,5 @@
 class RoundSerializer < ActiveModel::Serializer
-  attributes :id, :name, :is_active, :is_in_progress, :is_locked
+  attributes :id, :name, :is_active, :is_in_progress, :is_locked, :starts_at_ms
 
   has_many :games
 

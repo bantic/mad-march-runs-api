@@ -17,5 +17,6 @@ RSpec.describe RoundSerializer, type: :serializer do
     its(:keys) { should include(:is_active) }
     its(:keys) { should include(:is_in_progress) }
     its(:keys) { should include(:is_locked) }
+    its(:keys) { should include(:starts_at_ms) }
   end
 end
