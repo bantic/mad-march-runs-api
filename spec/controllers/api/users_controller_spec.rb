@@ -13,6 +13,9 @@ RSpec.describe Api::UsersController, type: :controller do
   end
 
   describe '#update teams' do
+    before { Timecop.travel( User::TOURNEY_START_TIME - 1.minute) }
+    after { Timecop.return }
+
     let(:team) { Fabricate :team }
     let(:params) { {
       id: user.id,
