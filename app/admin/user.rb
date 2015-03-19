@@ -1,4 +1,5 @@
 ActiveAdmin.register User do
+  permit_params :email, :password, team_ids: []
 
   index do
     selectable_column
@@ -15,6 +16,28 @@ ActiveAdmin.register User do
         "#{pick.round.name}: #{pick.team.name}"
       end.join(',')
     end
+    actions
+  end
+
+  sidebar 'Runs Teams', :only => :show do
+    table_for user.teams do |t|
+      t.column("Team") { |team| team.name }
+    end
+  end
+
+  form do |f|
+    f.semantic_errors
+
+    if f.object.new_record?
+      f.input :email
+      f.input :password
+    end
+
+    f.inputs "Teams" do # Make a panel that holds inputs for lifestyles
+      f.input :teams, as: :check_boxes, collection: Team.all # Use formtastic to output my collection of checkboxes
+    end
+    para "Press cancel to return to the list without saving."
+    f.actions
   end
 
   # See permitted parameters documentation:
