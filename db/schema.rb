@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150318024639) do
+ActiveRecord::Schema.define(version: 20150320003154) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,10 +51,10 @@ ActiveRecord::Schema.define(version: 20150318024639) do
 
   create_table "games", force: :cascade do |t|
     t.integer  "round_id"
-    t.integer  "team1_id"
-    t.integer  "team2_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "winning_team_id"
+    t.integer  "victory_margin"
   end
 
   create_table "games_teams", id: false, force: :cascade do |t|
@@ -87,10 +87,11 @@ ActiveRecord::Schema.define(version: 20150318024639) do
   create_table "teams", force: :cascade do |t|
     t.string   "name"
     t.integer  "seed"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "region"
     t.string   "logo_path"
+    t.boolean  "is_eliminated", default: false
   end
 
   create_table "teams_users", id: false, force: :cascade do |t|

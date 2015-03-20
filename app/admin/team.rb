@@ -1,4 +1,5 @@
 ActiveAdmin.register Team do
+  permit_params :is_eliminated
 
   index do
     selectable_column
@@ -7,10 +8,12 @@ ActiveAdmin.register Team do
     column :name
     column :seed
     column :region
+    column :is_eliminated
 
     column "Selected count" do |team|
       team.users.count
     end
+    actions
   end
 
 
