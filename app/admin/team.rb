@@ -16,6 +16,14 @@ ActiveAdmin.register Team do
     actions
   end
 
+  batch_action :mark_eliminated do |ids|
+    Team.find(ids).each do |team|
+      team.is_eliminated = true
+      team.save!
+    end
+    redirect_to collection_path, alert: 'The teams have been marked eliminated'
+  end
+
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

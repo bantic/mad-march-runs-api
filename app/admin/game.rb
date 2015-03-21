@@ -27,7 +27,7 @@ ActiveAdmin.register Game do
 
     if f.object.new_record?
       f.inputs "Teams" do
-        f.input :teams, as: :check_boxes, collection: Team.all # Use formtastic to output my collection of checkboxes
+        f.input :teams, as: :check_boxes, collection: Team.not_eliminated.all # Use formtastic to output my collection of checkboxes
       end
     end
 
