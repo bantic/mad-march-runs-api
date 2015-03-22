@@ -1,5 +1,5 @@
 ActiveAdmin.register Team do
-  permit_params :is_eliminated
+  permit_params :is_eliminated, :name
 
   index do
     selectable_column
