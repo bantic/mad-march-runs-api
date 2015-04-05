@@ -12,6 +12,8 @@ class Pick < ActiveRecord::Base
   validate :team_belongs_to_game
   validate :game_belongs_to_round
   validate :round_has_not_started
+  validate :user_has_not_picked_round
+  validate :user_has_not_picked_team
 
   private
 
@@ -37,6 +39,25 @@ class Pick < ActiveRecord::Base
     return unless game && team
     if !game.teams.include?(team)
       errors.add(:team, 'is not playing in this game')
+      return true
+    end
+  end
+
+  def user_has_not_picked_round
+    return unless user && round
+
+    if user.picks.find {|p| p.round == round}
+      errors.add(:round, 'already has been picked')
+      return true
+    end
+  end
+
+  def user_has_not_picked_team
+    return unless user && team
+
+    picked_teams = user.picks.map(&:team)
+    if picked_teams.include?(team)
+      errors.add(:team, 'has alredy been picked')
       return true
     end
   end

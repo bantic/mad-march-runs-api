@@ -41,5 +41,29 @@ RSpec.describe Pick, type: :model do
       expect(pick).not_to be_valid
       expect(pick.errors).to include(:base)
     end
+
+    it 'is not valid if the user has already picked for that round' do
+      old_pick = Fabricate :pick
+
+      user = old_pick.user.reload
+      expect(user.picks.length).to eq 1
+
+      new_game = Fabricate(:game, round:old_pick.round)
+      pick = Fabricate.build(:pick, user:user, game:new_game, round:old_pick.round)
+      expect(pick).not_to be_valid
+      expect(pick.errors).to include(:round)
+    end
+
+    it 'is not valid if the user has already picked that team' do
+      old_pick = Fabricate :pick
+
+      old_team = old_pick.team
+      user = old_pick.user.reload
+
+      new_game = Fabricate(:game, teams: [old_team, Fabricate(:team)])
+      pick = Fabricate.build(:pick, user:user, team:old_team, game:new_game)
+      expect(pick).not_to be_valid
+      expect(pick.errors).to include(:team)
+    end
   end
 end
